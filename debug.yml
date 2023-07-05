@@ -1,0 +1,11 @@
+---
+- name: Debug output
+  hosts: my_group
+  become: true
+  gather_facts: false
+
+  tasks:
+    - name: Print the name of each host when defined
+      ansible.builtin.debug:
+        msg: System {{ inventory_hostname }} 
+
