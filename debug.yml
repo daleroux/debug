@@ -1,6 +1,6 @@
 ---
 - name: Debug output
-  hosts: my_group
+  hosts: target_group
   become: true
   gather_facts: false
 
